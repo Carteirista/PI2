@@ -1,0 +1,25 @@
+param n := 4;
+param carros := 10;
+# Hora a que o veículo tem de estar no hospital
+param close := 150;
+
+# janelas temporais dos turnos.
+
+param janelaTurno : 1 2 :=
+1	0	90
+2	300	390
+3	510	600
+4	720	810;
+
+# X Y tProc premio turno
+param pontos : 1 2 3 4 5 :=
+1	40.00	50.00	0.00	2	45.00	68.00	5.00	3	45.00	70.00	5.00	4	40.00	50.00	0.00;
+
+# este valor é para aumentar o tempo num determinado turno
+param transito : 1 :=
+1 1
+2 1.5
+3 1.2
+4 1;
+
+
